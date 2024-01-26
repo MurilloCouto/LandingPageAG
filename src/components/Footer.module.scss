@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+
+    .logo {
+        width: 20rem;
+        height: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 60%;
+    }
+
+    i{
+        font-size: 2rem;
+        color: whitesmoke;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        font-size: 1rem;
+        padding: 0;
+        height: 15rem;
+
+    }
+}

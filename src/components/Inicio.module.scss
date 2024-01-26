@@ -1,0 +1,33 @@
+.inicio {
+    background-image: url("https://github.com/MurilloCouto/landing-page-pt/blob/main/assets/full-slides/slide-1.jpg?raw=true");
+    background-size: cover;
+    filter: grayscale(30%);
+
+    text-align: center;
+    height: 35rem;
+    padding: 2rem;
+
+    h1 {
+        padding-top: 7rem;
+        letter-spacing: 2px;
+        font-size: 2.5rem;
+    }
+
+    p {
+        margin-top: 2.5rem;
+        font-size: 1.4rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .inicio {
+        height: 50rem;
+        padding: 0 1.5rem;
+        
+        p {
+            text-align: left;
+        }
+
+    }
+}

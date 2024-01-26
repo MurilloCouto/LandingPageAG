@@ -1,0 +1,38 @@
+.alunos {
+    color: whitesmoke;
+    text-align: center;
+    height: 25rem;
+    padding: 5rem 2rem;
+
+    img {
+        width: 20rem;
+        height: 15rem;
+        margin-bottom: 2rem;
+        transition: 0.5s;
+        box-shadow: 0 8px 12px black;
+        border-radius: 8px;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+
+    .fotos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding: 4rem 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .alunos {
+        height: 90rem;
+
+        .fotos {
+            flex-direction: column;
+        }
+
+    }
+}

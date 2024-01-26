@@ -1,0 +1,47 @@
+.planos {
+    background-color: whitesmoke;
+    color: #303030;
+    text-align: center;
+    height: 40rem;
+    padding: 5rem 2rem;
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 5rem;
+        padding: 4rem 1rem;
+
+        .card {
+            background-color: #303030;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 8px 12px black;
+
+            height: 20rem;
+            width: 20rem;
+            padding: 3rem 1rem;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: green;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .planos {
+        height: 95rem;
+
+        .cards {
+            flex-direction: column;
+        }
+
+    }
+}
