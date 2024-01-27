@@ -2,7 +2,7 @@ import style from "./Sobre.module.scss";
 
 export function Sobre() {
 	return (
-		<div className={style.sobre}>
+		<div id="sobre" className={style.sobre}>
 			<h1>Compromisso com o seu resultado!</h1>
 			<div className={style.etapas}>
 				<div>

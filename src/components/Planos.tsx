@@ -2,7 +2,7 @@ import style from "./Planos.module.scss";
 
 export function Planos() {
 	return (
-		<div className={style.planos}>
+		<div id="planos" className={style.planos}>
 			<h1>PLANOS</h1>
 			<div className={style.cards}>
 				<div className={style.card}>

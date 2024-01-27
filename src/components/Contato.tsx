@@ -43,7 +43,7 @@ export function Contato() {
 	};
 
 	return (
-		<div className={style.contato}>
+		<div id="contato" className={style.contato}>
 			<h1>Entre em contato com a gente!</h1>
 			<form onSubmit={handleSubmit}>
 				<label>

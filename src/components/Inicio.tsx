@@ -3,7 +3,7 @@ import style from "./Inicio.module.scss";
 
 export function Inicio() {
 	return (
-		<div className={style.inicio}>
+		<div id="inicio" className={style.inicio}>
 			<h1>Seja bem-vindo(a), ao seu novo estilo de vida!</h1>
 			<p>
 				Oferecemos treinos personalizados, orientações nutricionais e suporte
