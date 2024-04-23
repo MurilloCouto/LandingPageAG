@@ -75,7 +75,7 @@ export function Contato() {
 						placeholder="Digite sua mensagem aqui..."
 					/>
 				</label>
-				<Button text="ENVIAR" type="submit" />
+				<Button text="Enviar" type="submit" />
 			</form>
 		</div>
 	);
