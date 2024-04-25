@@ -5,7 +5,7 @@
     padding: 5rem 2rem;
 
     img {
-        width: 26rem;
+        width: 28rem;
         height: 20rem;
         margin-bottom: 2rem;
         transition: 0.5s;
@@ -28,11 +28,11 @@
 
 @media screen and (max-width: 768px) {
     .alunos {
-        height: 90rem;
+        height: 28rem;
 
-        .fotos {
-            flex-direction: column;
+        img {
+            width: 20rem;
+            height: 15rem;
         }
-
     }
 }

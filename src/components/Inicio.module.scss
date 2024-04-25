@@ -5,44 +5,53 @@
     color: black;
 
     text-align: center;
-    height: 35rem;
-    padding: 2rem;
+    height: 40rem;
+    padding: 2rem 10rem;
     position: relative;
-    transition: background-image 0.5s ease;
+    transition: background-image 1s ease;
 
     h1 {
         border-radius: 8px;
-        background-color: #ffffff98;
-        margin: 7rem 2rem 0rem 2rem;
+        background-color: #ffffffbf;
+        margin: 3rem 2rem 0rem 2rem;
         padding: 1rem;
         letter-spacing: 2px;
         font-size: 2.5rem;
     }
 
     p {
+        letter-spacing: 1.5px;
+        text-align: left;
         border-radius: 8px;
-        background-color: #ffffff98;
-        padding: 1rem 0;
-        margin: 2.5rem 2rem 5rem 2rem;
+        background-color: #ffffffbf;
+        padding: 1rem 2rem;
+        margin: 2rem 2rem 4rem 2rem;
         font-size: 1.4rem;
         font-weight: 500;
         
+    }
+
+    span{
+        font-weight: 700;
     }
 }
 
 @media screen and (max-width: 768px) {
     .inicio {
-        height: 55rem;
+        height: 56rem;
         padding: 0.5rem 0;
         
         h1 {
+            font-size: 1.75rem;
             padding: 0.5rem;
             margin: 4rem 1rem;
         }
 
         p {
-            padding: 0.5rem;
-            margin: 1rem 1rem 2rem 1rem;
+            font-size: 1.25rem;
+            letter-spacing: 2px;
+            padding: 1rem;
+            margin: 1rem 1rem 3rem 1rem;
         }
     }
 }
