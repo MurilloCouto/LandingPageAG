@@ -10,9 +10,13 @@
         width: 15rem;
     }
 
-    a{
-        text-decoration: none;
+    button{
         color: whitesmoke;
+        background: transparent;
+        border: 0;
+        outline: none;
+        font-family: "Montserrat", sans-serif; 
+        letter-spacing: 1px;
     }
     
     .menu {
@@ -45,16 +49,12 @@
 
         img {
             width: 15rem;
-            padding: 1rem 0;
+            padding: 2rem 0;
         }
-    }
 
-    .menu {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 1rem;
+        .menu {
+            display: none;
+        }
     }
 }
     

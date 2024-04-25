@@ -1,33 +1,48 @@
 .inicio {
-    background-image: url("https://github.com/MurilloCouto/landing-page-pt/blob/main/assets/full-slides/slide-1.jpg?raw=true");
     background-size: cover;
     filter: grayscale(30%);
+
+    color: black;
 
     text-align: center;
     height: 35rem;
     padding: 2rem;
+    position: relative;
+    transition: background-image 0.5s ease;
 
     h1 {
-        padding-top: 7rem;
+        border-radius: 8px;
+        background-color: #ffffff98;
+        margin: 7rem 2rem 0rem 2rem;
+        padding: 1rem;
         letter-spacing: 2px;
         font-size: 2.5rem;
     }
 
     p {
-        margin-top: 2.5rem;
+        border-radius: 8px;
+        background-color: #ffffff98;
+        padding: 1rem 0;
+        margin: 2.5rem 2rem 5rem 2rem;
         font-size: 1.4rem;
-        margin-bottom: 5rem;
+        font-weight: 500;
+        
     }
 }
 
 @media screen and (max-width: 768px) {
     .inicio {
-        height: 65rem;
-        padding: 0 1.5rem;
+        height: 55rem;
+        padding: 0.5rem 0;
         
-        p {
-            text-align: left;
+        h1 {
+            padding: 0.5rem;
+            margin: 4rem 1rem;
         }
 
+        p {
+            padding: 0.5rem;
+            margin: 1rem 1rem 2rem 1rem;
+        }
     }
 }
