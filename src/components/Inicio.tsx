@@ -21,6 +21,14 @@ export function Inicio() {
         return () => clearInterval(interval);
     });
 
+    function scrollToSection(sectionId: string) {
+        console.log("Scrolling to section:", sectionId);
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+
     return (
         <div id="inicio" className={`${style.inicio} ${style.fadeInOut}`} style={{ backgroundImage: `url(${backgrounds[backgroundIndex]})` }}>
             <h1>Seja bem-vindo(a), ao seu novo estilo de vida!</h1>
@@ -31,7 +39,7 @@ export function Inicio() {
                 ajustar estratégias e celebrar suas conquistas. <br /><br /><span>Seu sucesso é a
                 nossa prioridade!</span> 
             </p>
-            <Button text={"Confira nossos planos"} type={undefined} />
+            <Button text={"Confira nossos planos"} type={"button"} onClick={() => scrollToSection("planos")}/>
         </div>
     );
 }
