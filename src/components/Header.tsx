@@ -1,12 +1,12 @@
 import style from "./Header.module.scss";
 
 export function Header() {
-    const scrollToSection = (sectionId: string) => {
+    function scrollToSection(sectionId: string) {
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: "smooth" });
         }
-    };
+    }
 
     return (
         <div className={style.header}>
