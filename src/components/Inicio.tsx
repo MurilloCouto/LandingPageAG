@@ -6,9 +6,9 @@ import style from "./Inicio.module.scss";
 export function Inicio() {
     const [backgroundIndex, setBackgroundIndex] = useState(0);
     const backgrounds = [
-        "/inicioBackGround1.jpg",
-        "/inicioBackGround2.jpg",
-        "/inicioBackGround3.jpg",
+        "/iniciobg1.jpg",
+        "/iniciobg2.jpg",
+        "/iniciobg3.jpg",
     ];
 
     useEffect(() => {
@@ -26,10 +26,10 @@ export function Inicio() {
             <h1>Seja bem-vindo(a), ao seu novo estilo de vida!</h1>
             <p>
                 Oferecemos treinos personalizados, orientações nutricionais e o suporte
-                necessário para você alcançar seus objetivos. <br /> Juntos, criaremos um plano adaptado
-                às suas metas específicas. <br /> Estamos aqui para esclarecer dúvidas,
-                ajustar estratégias e celebrar suas conquistas. <br /> Seu sucesso é a
-                nossa prioridade!
+                necessário para você alcançar seus objetivos. <br /><br /> Juntos, criaremos um plano adaptado
+                às suas metas específicas. <br /><br /> Estamos aqui para esclarecer dúvidas,
+                ajustar estratégias e celebrar suas conquistas. <br /><br /><span>Seu sucesso é a
+                nossa prioridade!</span> 
             </p>
             <Button text={"Confira nossos planos"} type={undefined} />
         </div>

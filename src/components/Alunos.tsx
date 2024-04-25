@@ -6,7 +6,7 @@ export function Alunos() {
   const [visibleImages, setVisibleImages] = useState<string[]>([]);
 
   const images = useMemo(
-    () => ["/slide-1.jpg", "/slide-2.jpg", "/slide-3.jpg", "/slide-1.jpg"],
+    () => ["/slide-1.jpg", "/slide-2.jpg", "/slide-3.jpg", "/slide-2.jpg"],
     []
   );
 
@@ -31,11 +31,13 @@ export function Alunos() {
     }
   };
 
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <div id="alunos" className={style.alunos}>
       <h1>Aqui estão alguns dos resultados dos nossos alunos</h1>
       <div className={style.fotos}>
-        {visibleImages.map((image, index) => (
+        {visibleImages.slice(0, isMobile ? 1 : visibleImages.length).map((image, index) => (
           <img key={index} src={image} alt="alunos" />
         ))}
       </div>
